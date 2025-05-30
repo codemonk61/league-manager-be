@@ -9,6 +9,8 @@ const teamSchema = new mongoose_1.Schema({
     teamName: String,
     pairType: String,
     createdAt: { type: Date, default: Date.now },
-    hasVirtualPlayer: Boolean
+    hasVirtualPlayer: Boolean,
+    reEntry: Number,
+    fee: String
 });
 exports.Team = (0, mongoose_1.model)("Team", teamSchema);

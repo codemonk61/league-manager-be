@@ -15,7 +15,9 @@ const teamSchema = new Schema({
     teamName: String,
     pairType: String,
     createdAt: { type: Date, default: Date.now },
-    hasVirtualPlayer: Boolean
+    hasVirtualPlayer: Boolean,
+    reEntry: Number,
+    fee: String
 });
 
 export const Team = model<ITeam>("Team", teamSchema);

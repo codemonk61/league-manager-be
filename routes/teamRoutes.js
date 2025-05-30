@@ -11,4 +11,9 @@ const router = express_1.default.Router();
 router.post("/generate", (0, express_async_handler_1.default)(teamController_1.generateTeams));
 // GET /api/teams - Fetch all teams (optional)
 router.get("/", teamController_1.getTeams);
+//  delete Team
+router.delete('/:id', teamController_1.deleteTeam);
+// update Team
+router.put('/:id', teamController_1.updateTeam);
+router.post("/custom", (0, express_async_handler_1.default)(teamController_1.createCustomTeam));
 exports.default = router;
